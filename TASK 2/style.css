@@ -1,0 +1,620 @@
+body {
+   background-color: lightblue;
+ }
+ html{
+  scroll-behavior:smooth;
+ }
+ /* Reset default browser styles */
+ * {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+ }
+ 
+ /* Styles for header section */
+ .header {
+   width: 50;
+   height: 100vh;
+   background-color: lightblue;
+   justify-content: center;
+   align-items: center;
+ }
+ .shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+ 
+ /* Styles for navigation bar */
+   .header nav ul {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+     margin-top: 50px;
+      list-style: none;
+     
+    }
+    
+    .header nav ul li {
+      margin: 20px;
+      align-items: center;
+    }
+    
+    .header nav ul li a {
+      align-items: center;
+      text-decoration:dashed;
+      color: rgb(1, 34, 32);
+      font-weight: bolder;
+    }
+ 
+ 
+    nav ul li a:hover {
+      background-color: #ff0000; /* changed from black to red */
+      color: #ffffff; /* changed from black to white */
+      border-radius: 10px;
+      padding: 10px 15px; /* added padding to make the hover effect more visible */
+      transition: background-color 0.5s;
+    }
+ }
+ 
+ .button-cv,.button-gfc {
+   display: inline-block;
+   margin-left: 0%;
+   border-radius: 5px;
+   transition: background-color 0.5s;
+   background: black;
+   padding: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .button-cv:hover {
+   background-color: white;
+   color: black;
+ }
+ 
+ .button-gfc {
+   background: rgb(0, 0, 0);
+ }
+ 
+ .button-gfc:hover {
+   background-color: white;
+   color: black;
+ }
+ 
+ /* Styles for body section */
+ .body {
+    margin-left: 80px;
+   margin-top: 15%;
+   height: 100vh;
+ }
+ 
+ .body h1 {
+ top: 0;
+
+   text-align:left;
+   font-size: 40px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   color: blue;
+ }
+ 
+ .container {
+   width: 100%;
+   height: 50;
+   display: flex;
+ }
+ 
+ h2 {
+   color:cornflowerblue;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+ }
+ 
+ div span {
+   font-family: cursive;
+   color: rgb(255, 0, 102);
+ }
+ 
+ .button-lrn,.button-hire {
+   background: lightsalmon;
+   padding: 10px 12px;
+   text-decoration: none;
+   font-weight: bold;
+   color: whitesmoke;
+   display: inline-block;
+   margin: 30px 8px;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+   border: none;
+   letter-spacing: 1px;
+   cursor: pointer;
+ }
+ 
+ .button-lrn:hover {
+   background-color: whitesmoke;
+   color: black;
+ }
+ 
+ .button-hire {
+   background: black;
+ }
+ 
+ .button-hire:hover {
+   background-color: seagreen;
+ }
+ 
+ span {
+   color: seagreen;
+ }
+ 
+ /* Styles for image section */
+
+ 
+ .image img {
+   pointer-events: none;
+   border-radius: 50%;
+   height: 50%;
+   position: absolute;
+   left: 80%;
+   bottom: 22%;
+   transform: translate(-60%);
+ }
+ 
+ /*about section*/
+ .about {
+   position: absolute;
+   top: 90%;
+   font-family: "Montserrat", cursive, sans-serif;
+   padding: 0;
+   text-align: center;
+   font-size: 20px;
+ }
+ 
+ .h2 {
+   
+   row-gap: -2;
+   color: #ff0000;
+   font-size: 20px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   margin-top: 20px;
+ }
+ 
+ .about p {
+   color: #000000;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   line-height: 1.5;
+   align-items: left;
+ }
+ 
+ .p {
+   color: #000000;
+   font-family: 'Montserrat',cursive, sans-serif;
+   font-size: 20px;
+   line-height: 1.5;
+   align-items: center;
+ }
+ 
+ #counter {
+
+   display: flex;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: left;
+   width: 80%;
+   margin: 40px auto;
+   padding: 5%;
+   background-color: #40a9ab;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ /*<!-- skills se5ction -->*/
+ .skills-section {
+  padding-top: 80px;
+  max-width: 800px;
+  margin: 15%;
+  
+}
+
+.skills-heading {
+  height: 15vh;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+ 
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px;
+ 
+}
+
+.skill {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill:hover {
+  background-color:lightskyblue;
+  border-color:lightskyblue;
+  cursor: pointer;
+  color:lightskyblue;
+}
+
+.skill i {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.skill span {
+  font-size: 20px;
+  font-weight: bold;
+}
+ /*<!-- certificate se5ction -->*/
+ .certificate-container {
+  width: 300px; /* fixed width */
+  margin: 45px;
+  height: 200px; /* fixed height */
+  overflow: hidden; /* hide excess content */
+  border-radius: 10px; /* rounded corners */
+  cursor: pointer; /* pointer cursor on hover */
+  transition: all 0.3s ease-in-out; /* smooth transition on hover */
+}
+.certificate-text {
+  position: absolute;
+  top: 50%; /* vertically center the text */
+  left: 50%; /* horizontally center the text */
+  transform: translate(-50%, -50%); /* adjust for vertical and horizontal centering */
+  width: 100%; /* take up full width of container */
+  height: 100%; /* take up full height of container */
+  background-color: rgba(0, 0, 0, 0.5); /* add semi-transparent background */
+  color: #fff; /* set text color to white */
+  font-size: 24px; /* set font size */
+  font-weight: bold; /* set font weight to bold */
+  text-align: center; /* center the text horizontally */
+  padding: 20px; /* add padding */
+  display: none; /* hide text by default */
+}
+
+.certificate-container:hover .certificate-text {
+  display: block; /* show text on hover */
+}
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  border-radius: 10px; /* rounded corners */
+}
+
+.certificate-container:hover {
+  transform: scale(1.3); /* scale up on hover */
+  overflow: visible; /* show excess content on hover */
+  border-radius: 10px; /* rounded corners */
+}
+h2
+{
+  text-align: center;
+  justify-content: center;
+}
+.certificate-image {
+  border-radius: 10px; /* rounded corners */
+  width: 100%; /* take up full width of container */
+  height: 100%; /* take up full height of container */
+  object-fit: cover; /* cover the container with the image */
+}
+/*<!-- for more click here -->*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* adjust the height to your needs */
+}
+
+.animated-button {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #0b69e640;
+  box-shadow: 0 0 0 2px #ffffff20;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 20px;
+  background-color: #2196F3;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #0b8ef960;
+  color: #0063f7;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 250px;
+  height: 100px;
+  opacity: 1;
+}
+/*<!-- for contact click here -->*/
+h4{
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  
+}
+.contact {
+  position: relative;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 200px;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987); /* added this line */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px; /* added this line */
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition:.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.text-box {
+  position: relative;
+  margin-bottom: 20px; /* added this line */
+}
+
+.text-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.text-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition:.5s;
+}
+
+.text-box input:focus ~ label,
+.text-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition:.5s;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+              0 0 25px #03f40f,
+              0 0 50px #03f40f,
+              0 0 100px #03f40f;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  bottom: 100px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03f40f);
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a:hover span:nth-child(1) {
+  animation: btn-anim1 2s linear infinite;
+}
+/* tool tips*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip .tooltiptext::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip .tooltiptext::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
